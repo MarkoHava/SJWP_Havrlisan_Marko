@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme</title>
+</head>
+<body>
+    
+    <form action="" method="get">
+        <label for="name">Ime: </label>
+        <input type="text" name="name" id="name" size="10" maxlength="5"> <br>
+        <label for="prezime">Prezime: </label>
+        <input type="text" name="name" id="name" pattern="[A-Za-a]{3}"> <br>
+<hr>
+        <label>izaberi najbolji programski jezik: </label><br>
+        <input type="radio" name="jezik" id="html" value="html">
+        <label for="html">HTML</label> <br>
+        <input type="radio" name="jezik" id="c" value="c" checked>
+        <label for="c">C#</label> <br>
+        <input type="radio" name="jezik" id="js" value="js">
+        <label for="js">Javascript</label> <br>
+        <input type="radio" name="jezik" id="assembly" value="assembly">
+        <label for="assembly">Assembly</label> <br>
+<hr>
+        <label>Danas od predmeta imamo:</label><br>
+        <input type="checkbox" name="hj" id="hj" value="hj">
+        <label for="hj">Hrvatski</label><br>
+        <input type="checkbox" name="mat" id="mat" value="mat" checked>
+        <label for="mat">Matematika</label><br>
+        <input type="checkbox" name="niop" id="niop" value="niop">
+        <label for="niop">Napredno i objektno programiranje</label><br>
+        <hr>
+
+        <label>Izaberi boju</label>
+        <input type="color" name="" id="">
+
+        <hr>
+
+        <label>izaberi datum: "</label>
+        <input type="date"><br>
+
+        <hr>
+
+        <label>Password: </label>
+        <input type="password" name="passwd" id="passwd"><br>
+        
+        <label for="email">email address: </label>
+        <input type="email" id="email" name="email" required>
+        <hr>
+        <label>Unesi raspon:</label>
+        <input type="range" min="0.3" max=" 0.6"><br>
+        <hr>
+        <label for="cars">Choose a car:</label>
+
+        <select id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+        </select>
+        <br>
+
+
+        <input type="submit" value="Pošalji">
+        <input type="reset" value="Poništi">
+    </form>
+
+
+</body>
+</html>
