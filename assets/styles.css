@@ -1,0 +1,35 @@
+/* univerzalni selector */
+*{
+    background-color:antiquewhite;
+}
+
+/* element selector */
+
+/* h1{
+    color: mediumseagreen;
+} */
+
+/* Class selector */
+.prvi{
+    color: chocolate;
+}
+.drugi{
+    color: cornflowerblue;
+}
+.treci{
+    color:rebeccapurple;
+}
+
+ /* id selector */
+ #cetvrti{
+    color: crimson;
+ }
+ 
+ /* atribut selector */
+ p[draggable="true"]{
+    color: darkgoldenrod;
+ }
+
+ p[draggable="false"]{
+    color: darkorchid;
+ }
