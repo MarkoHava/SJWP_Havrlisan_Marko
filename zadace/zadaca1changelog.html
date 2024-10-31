@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marko Havrlišan">
+    <meta name="description" content="Zadaća 1 za SJWP, Unity 6 Changelog">
+    <title>Unity Engine Script</title>
+</head>
+<body>
+    <h1>Unity Engine Example Script</h1>
+    <h3>This script defines player's movement</h3>
+    <hr>
+    <pre>
+        <code>
+using System.Collections;
+using System.Collections.Generic;
+using System.Globalization;
+using UnityEngine;
+
+public class MovementHandler : MonoBehaviour {
+    public float MoveSpeed = 7f;
+    public float SprintSpeed = 20f;
+    public float SlowedSpeed = 4.369f;
+    public float FlySpeed = 13f;
+    public Vector3 MoveDirVect;
+    public static MovementHandler Singleton;
+
+    [SerializeField] private static float InitialMoveSpeed;
+//[serializefield] je tag koji omogucuje unityju da ga pretvori u binarni kod
+
+    [SerializeField] private GameObject Visuals;
+    [SerializeField] private GameObject Cam;
+
+    [SerializeField] private float jumpForce = 325f;
+    private Vector3 JumpVector;
+    private Rigidbody rb;
+    public static bool isGrounded;
+
+    private void Awake()
+    {
+        InitialMoveSpeed = MoveSpeed;
+        Singleton = this;
+    }
+
+//Start() metoda je unityjeva metoda koja se pokrene kad igrica pokrene
+//a Update() svaki frame dok je igra pokrenuta
+    private void Start()
+    {
+        rb = GetComponent[ nesta ](); //nesmijem reci tocno inace daje error D;
+        JumpVector = new Vector3(0f, jumpForce, 0f);
+    }
+
+    private void Update()
+    {
+        if (MouseHandler.MouseLockedMode) return;
+        HandleMovement();
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space)) {
+            rb.AddForce(JumpVector, ForceMode.Impulse);
+            isGrounded = false;
+        }
+    }
+
+
+    private void HandleMovement()
+    {
+        var x = Input.GetAxisRaw("Horizontal");
+        var z = Input.GetAxisRaw("Vertical");
+
+        Vector3 camFwdVec3 = new(Cam.transform.forward.x, 0, Cam.transform.forward.z);
+        Vector3 camRghtVec3 = new(Cam.transform.right.x, 0, Cam.transform.right.z);
+
+        MoveDirVect = new Vector3(x, 0, z).normalized;
+
+        if (z != 0)
+            transform.position += MoveSpeed * Time.deltaTime * z * camFwdVec3;
+        if (x != 0)
+            transform.position += MoveSpeed * Time.deltaTime * x * camRghtVec3;
+
+        MoveSpeed = MoveDirVect.z [manje od] 0 ? SlowedSpeed : InitialMoveSpeed;
+
+
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        isGrounded = true;
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        isGrounded = false;
+    }
+}
+        </code>
+    </pre>
+</body>
+</html>
