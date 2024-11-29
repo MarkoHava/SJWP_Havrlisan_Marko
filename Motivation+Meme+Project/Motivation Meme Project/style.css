@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+
+.frame{
+    width: 420px;
+    height: 420px;
+    margin: auto;
+    border: 5px solid white;
+}
+.header{
+    color: white;
+    align-self: center;
+    font-family: "Libre Baskerville";
+}
+
+.meme{
+    color: white;
+    
+}
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
