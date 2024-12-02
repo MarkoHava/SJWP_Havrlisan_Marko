@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rel{
+            background-color: rgb(61, 91, 190);
+            width: 600px;
+            height: 300px;
+            position: relative;
+        }
+        .wc1{
+            position: absolute;
+            background-color: whitesmoke;
+            width: 600px;
+            height: 80px;
+            top: 110px;
+        }
+        .wc2{
+            position: absolute;
+            background-color: whitesmoke;
+            width: 80px;
+            height: 300px;
+            left: 110px;
+        }
+        .rc1{
+            position: absolute;
+            background-color: crimson;
+            width: 600px;
+            height: 50px;
+            top: 125px;
+            z-index: 2;
+        }
+        .rc2{
+            position: absolute;
+            background-color: crimson;
+            width: 50px;
+            height: 300px;
+            left: 125px;
+            z-index: 2;
+        }
+        .s1{
+            display: inline-block;
+            background-color: green;
+            width: 100px;
+            height: 200px;
+        }
+        .s2{
+            display: inline-block;
+            background-color: whitesmoke;
+            width: 100px;
+            height: 200px;
+        }
+        .s3{
+            display: inline-block;
+            background-color: orange;
+            width: 100px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="rel">
+        <div class="wc1"></div>
+        <div class="wc2"></div>
+        <div class="rc1"></div>
+        <div class="rc2"></div>
+    </div>
+<hr>
+    <div class="s1"> </div><div class="s2"></div> <div class="s3"></div>
+</body>
+</html>
