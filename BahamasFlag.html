@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stripes{
+            background-color: rgb(0, 120, 139);
+            width: 400px;
+            height: 200px;
+            position: relative;
+        }
+        .mid{
+            background-color: #ffc728;
+            width: 400px;
+            height: 65px;
+            position: absolute;
+            top: 65px;
+        }
+        .triangle{
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 0px;
+            border-top: 100px solid transparent;
+            border-bottom: 100px solid transparent;
+            border-left: 150px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="stripes">
+        <div class="mid"></div>
+        <div class="triangle"></div>
+    </div>
+    
+</body>
+</html>
