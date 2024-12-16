@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .master{
+            width: 1000px;
+            height: 1000px;
+            position: relative;
+        }
+        .pbase{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: #FCFA00;
+            border-radius: 100px;
+        }
+        .peye{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background-color: rgb(36, 36, 35);
+            border-radius: 100px;
+            top: 40px;
+            left: 125px;
+        }
+        .pmouth{
+            position: absolute;
+            height: 0;
+            width: 0;
+            
+            border-top: 100px solid transparent;
+            border-bottom: 100px solid transparent;
+            border-right: 100px solid black;
+            transform: scale(1.5);
+            transform: scaleY(0.5);
+            left: 100px;
+        }
+        .coin{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: #FCFA00;
+            border-radius: 100px;
+            top: 85px;
+            left: 250px;
+        }
+        #c2{
+            left: 350px;
+        }
+        .bbase{
+            background-color: #EF1B09;
+            width: 175px;
+            height: 140px;
+            position: absolute;
+            top: 50px;
+            left: 500px;
+            transform: scaleY(1.5);
+            border-radius: 80px 80px 0 0;
+        }
+        .bcutout{
+            background-color: black;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 200px;
+            left: 565px;
+            border-radius: 30px;
+            transform: scale(1.4);
+        }
+        .bcutround{
+            background-color: #EF1B09;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 250px;
+            left: 513px;
+            border-radius: 25px;
+            transform: scale(1.5);
+        }
+        .beyes{
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50px;
+            left: 530px;
+            border-radius: 23px;
+            transform: scaleY(1.5);
+        }
+        .bpupil{
+            background-color: #1A2ECD;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 60px;
+            left: 535px;
+            border-radius: 23px;
+            transform: scaleY(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="master">
+        <div class="pbase"></div>
+        <div class="peye"></div>
+        <div class="pmouth"></div>
+
+        <div class="coin"></div>
+        <div class="coin" id="c2"></div>
+
+        <div class="bbase"></div>
+        <div class="bcutout"></div>
+        <div class="bcutround"></div>
+        <div class="bcutround" style="left: 637px;"></div>
+        <div class="beyes"></div>
+        <div class="beyes" style="left: 610px;"></div>
+        <div class="bpupil"></div>
+        <div class="bpupil" style="left: 615px;"></div>
+    </div>
+</body>
+</html>
