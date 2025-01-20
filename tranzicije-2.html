@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. zadatak</title>
+    <style>
+        #main{
+            width: 500px;
+            height: 500px;
+            position: relative;
+            left: 500px;
+            top: 200px;
+        }
+        #a{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            transform-origin: top left;
+            transition: rotate 1s ease-in-out;
+        }
+        #b{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background-color: yellow;
+            left: 250px;
+            transform-origin: top right;
+            transition: rotate 1s ease-in-out;
+        }
+        #c{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background-color: blue;
+            top: 250px;
+            transform-origin: bottom left;
+            transition: rotate 1s ease-in-out;
+        }
+        #d{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background-color: green;
+            top: 250px;
+            left: 250px;
+            transform-origin: bottom right;
+            transition: rotate 1s ease-in-out;
+        }
+        #main:hover #a{
+            rotate: 90deg;
+        }
+        #main:hover #b{
+            rotate: -90deg;
+        }
+        #main:hover #c{
+            rotate: -90deg;
+        }
+        #main:hover #d{
+            rotate: 90deg;
+        }
+        #text{
+            position: absolute;
+            top: 250px;
+            left:250px
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p id="text">HI</p>
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
+        <div id="d"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Zadatak</title>
+    <style>
+        div{
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            transition: width 1s ease-in-out;
+        }
+        #master{
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background-color: transparent;
+            transition: width 1s ease-in-out;
+        }
+        div#a1:hover{
+            width: 600px;
+        }
+        div#a2{
+            transition: width 1s ease-in-out 1s;
+        }
+        #master:hover #a2{
+            width: 600px;
+        }
+        div#a1:hover #a2{
+            width: 600px;
+        }
+        #a2{
+            top: 25px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="master">
+        <div id="a1"></div>
+        <div id="a2"></div>
+    </div>
+</body>
+</html>
