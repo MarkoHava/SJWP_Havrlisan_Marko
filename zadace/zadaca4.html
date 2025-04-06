@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marko Havrlišan">
+    <meta name="description" content="4. zadaća za SJWP">
+    <title>Zadaca 4.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <style>
+        .main{
+            width: 400px;
+            height: 300px;
+            background-color: #E8ad6d;
+            border: 3px solid black;
+            position: relative;
+        }
+        .mid{
+            position: absolute;
+            background-color: #de6b67;
+            height: 300px;
+            width: 107px;
+            left: 145px;
+        }
+        .line{
+            position: absolute;
+            background-color: #de6b67;
+            height: 300px;
+            width: 39px;
+            left: 87px;
+        }
+        #ln2{
+            left: 272px;
+        }
+        .cube{
+            position: absolute;
+            background-color: #E8ad6d;
+            height: 25px;
+            width: 25px;
+            left: 185px;
+            top: 80px;
+            transform: rotate(39deg) skew(-15deg);
+        }
+        #cb2{
+            top: 180px
+        }
+        .vizitka{
+            width: 500px;
+            height: 300px;
+            border: 5px solid black;
+            position: relative;
+            background-color:bisque;
+        }
+        h1{
+            position: absolute;
+            left: 200px;
+            top: 10px;
+            font-family: "DM Sans";
+            font-weight: bold;
+        }
+        .opis{
+            position: absolute;
+            left: 200px;
+            top: 70px;
+            font-family: serif;
+        }
+        .mail{
+            position: absolute;
+            left: 200px;
+            top: 140px;
+            font-family: serif;
+        }
+        .phone{
+            position: absolute;
+            left: 200px;
+            top: 170px;
+            font-family: serif;
+        }
+        .insta{
+            position: absolute;
+            left: 220px;
+            top: 240px;
+        }
+        .pfp{
+            position: absolute;
+            border-radius: 100px;
+            height: 150px;
+            top: 40px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="line"></div>
+        <div class="line" id="ln2"></div>
+        <div class="mid"></div>
+        <div class="cube"></div>
+        <div class="cube" id="cb2"></div>
+        <div class="cube"></div>
+        <div class="cube" id="cb2"></div>
+    </div>
+    <img src="./zadaca4cssThing.png" alt="" style="width: 406px;">
+    <div class="vizitka">
+        <h1>Marko Havrlišan</h1>
+        <p class="opis">Učenik Tehničke Škole, programer i proizvođač kvalitetnih video igara.</p>
+        <p class="mail">Email: Markohavrlisan@gmail.com</p>
+        <p class="phone">Telefon: +385 91 242 9127</p>
+        <p class="insta">Instagram</p>
+        <p class="insta" style="left: 340px">Facebook</p>
+        <img src="./images.jpeg" alt="zoned out car" class="pfp">
+    </div>
+</body>
+</html>
