@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Dnevnik</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header{
+            position: fixed;
+            background-color: #0d3a5e;
+            height: 60px;
+            width: 100vw;
+            top: 0px;
+            left: 0px;
+        }
+        #border{
+            position: absolute;
+            height: 3px;
+            width: 100vw;
+            top: 60px;
+            background-color: #1b75bc;
+        }
+        #linija{
+            background-image: linear-gradient(to right, #52b458, #9f569f, #2e6fb6);
+            width: 117px;
+            height: 4px;
+            z-index: 1;
+            top: 35px;
+            left: 10px;
+            border-radius: 5px;
+            position: absolute;
+        }
+        #text{
+            position: absolute;
+            font-weight: bold;
+            font-size: 24px;
+            color: white;
+            top: -14px;
+            left: 10px;
+        }
+        .main{
+            position: relative;
+            width: 600px;
+            height: 400px;
+            top: 120px;
+            margin: auto;
+            
+        }
+        .pass{
+            margin-left: 33%;
+            margin-top: 29%;
+        }
+        label{
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 80px;
+            margin-top: 25%;
+        }
+        input{
+            position: absolute;
+            width: 300px;
+            height: 25px;
+            margin-left: 33%;
+            margin-top: 24%;
+        }
+        .submit{
+            position: absolute;
+            margin-left: 114px;
+            width: 307px;
+            height: 25px;
+            background-color: #1b75bc;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 0px;
+            margin: 10px;
+            margin-left: 33%;
+            top: 60px;
+            margin-top: 30%;
+        }
+        .submit:hover{
+            background-color: #1576bb;
+        }
+        .dobrodosli{
+            position: absolute;
+            margin-left: 45%;
+            top: 80px;
+        }
+        footer{
+            margin-top:40vh;
+             height: 188px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="border"></div>
+        <div id="linija"></div>
+        <p id="text">e-Dnevnik</p>
+    </div>
+    <div class="main">
+        <h2 class="dobrodosli">Dobro Došli</h2>
+        <label for="ime">Korisnicko Ime:</label>
+        <input type="text" name="ime" id="ime"><br>
+        <label for="passwd" style="margin-left: 130px; margin-top: 30%;">Lozinka:</label>
+        <input type="password" name="passwd" id="passwd" class="pass"><br>
+
+        <input type="submit" value="PRIJAVA" class="submit">
+    </div>
+    <footer> 
+        <img src="cnlogo.svg" alt="" style="width: 150px; margin-left: 45%;">
+        <hr>
+        <p style="width: 13%; font-size:14px; display: inline-block; vertical-align: middle;">Kontakt +385 1 6661 500</p>
+        <a style="width: 13%; font-size:14px; display: inline-block; vertical-align: middle;" href="helpdesk@skole.hr">Online Kontakti</a>
+        <a style="width: 13%; font-size:14px; display: inline-block; vertical-align: middle;" href="https://www.carnet.hr/usluga/e-dnevnik-za-skole/">Važni dokumenti</a>
+        <a style="width: 13%; font-size:14px; display: inline-block; vertical-align: middle;" href="ftp://ftp.carnet.hr/pub/CARNet/docs/rules/CDA0058.pdf">Prava i obaveze korisnika</a>
+        <a style="width: 13%; font-size:14px; display: inline-block; vertical-align: middle;" href="ftp://ftp.carnet.hr/pub/CARNet/docs/rules/CDA0058.pdf">Izjava o prisupačnosti</a>
+        <a style="width: 13%; font-size:14px; display: inline-block; vertical-align: middle;" href="ftp://ftp.carnet.hr/pub/CARNet/docs/rules/CDA0058.pdf">Obavijest o privatnosti</a>
+    </footer>
+    <!--#0e3af border - #2d71a8, linija - prva #52b458 roza #9f569f plava #2e6fb6 -->
+</body>
+</html>
