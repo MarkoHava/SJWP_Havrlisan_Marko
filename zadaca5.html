@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        .header{
+            height: 100px;
+            width: 1fr;
+            background-color: transparent;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .headerText{
+            font-size: 34px;
+            color: black;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+        }
+        .frame{
+            width: 1fr;
+            height: 800px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+ <div class="header">
+    <a href="" class="headerText">ABOUT</a>
+    <a href="./zadaca5-2.html" class="headerText" style="grid-column: 2;">PORTFOLIO</a>
+    <a href="" class="headerText" style="grid-column: 3;">CONTACT</a>
+ </div>
+
+ <div class="frame">
+    <h1 style="font-size: 30px; margin-left: 10px;"> Marko </h1>
+    <h3 style="display: block; ">Programmer, GameDev</h3>
+    <h3 style="display: block;"> Datum rođenja: </h3>
+    <img src="./noFilter.png" alt="" style="display: block; width: 300px; margin-left: 500px; margin-top: -100px;">
+</div>
+ </div>
+</body>
+</html>
