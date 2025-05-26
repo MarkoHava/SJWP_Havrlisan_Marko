@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
         <meta name="author" content="Marko Havrlišan">
     <meta name="description" content="5. zadaća za SJWP">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-    <title>About - ThatOneGamedev</title>
+    <title>Portfolio - ThatOneGamedev</title>
     <style>
         body{
             background-image: url("bg.png");
@@ -19,7 +19,7 @@
         }
         .header{
             height: 100px;
-            width: 100vw;
+            width: 1fr;
             background-color: transparent;
             display: flex;
             flex-direction: row;
@@ -62,8 +62,14 @@
         .frame{
             margin: auto;
             position: relative;
-            width: 300px;
-            height: 420px;
+            font-family: "Anta";
+            text-shadow:     
+            0 0 7px #f7374f,
+            0 0 10px #f7374f,
+            0 0 21px #f7374f;
+            color: #f7374f;
+            width: 500px;
+            height: 400px;
             border: 5px dashed #f7374f;
             box-shadow: 0 0 7px #f7374f,
             0 0 10px #f7374f,
@@ -74,7 +80,7 @@
             background-color: transparent;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 25vw;
+            gap: 10vw;
             margin-bottom: -1vh;
         }
     </style>
@@ -89,31 +95,15 @@
  <div class="Line"></div>
 
  <div class="master">
-    <div class="container" style="
-                        width: 40vw;
-                        height: 35vh;">
-
-        <h1 style="font-size: 37px; margin-left: 30px;"> ThatOneGamedev </h1>
-        <div class="Line" style="width: 35vw; height: 3px; margin-top: 10px; margin-left: -10vw;"></div>
-
-        <p style="display: block; margin-left: 20px;">I make cursed games that shouldn't exist</p>
-        <p style="display: block; margin-left: 20px;">Game developer, 3D artist and Music Composer</p>
-        <p style="display: block; margin-left: 20px;">Co-Founder & Lead Developer of Quality Forged Games Studio</p>
-    </div>
-
     <div class="frame">
-        <img src="./pfp.png" alt="" style="width: 300px; position: absolute;">
+        <img src="comingSoon.jpg" style="width: inherit; height: inherit;" alt="">
+        <h1 style="margin-top: -5vh; margin-left: 15vw;">Banana Parkour</h1>
     </div>
-</div>
-    <div class="container" style="
-    position: fixed; bottom: 0; left: 0;;
-    width: 40vw; height: 100px;
-    display: flex; justify-content: space-evenly; align-items: center; flex-direction: row;">
-        <img src="insta.png" alt="">
-        <a href="https://www.instagram.com/_thatonegamedev/?utm_source=ig_web_button_share_sheet" target="_blank" style="color: #f7374f; text-decoration: none; font-size: 25px;">Instagram</a>
-        <img src="twitter.png" alt="">
-        <a href="https://x.com/_ThatOneGamedev" target="_blank" style="color: #f7374f; text-decoration: none; font-size: 25px;">Twitter</a>
+    <div class="frame">
+        <img src="comingSoon.jpg" style="width: inherit; height: inherit;" alt="">
+            <h1 style="margin-top: -5vh; margin-left: 15vw;">Dungeon Crawler</h1>
     </div>
+ </div>
 
 </body>
 </html>
